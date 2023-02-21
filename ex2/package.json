@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "hello": "echo hello world"
+    "test": "jest",
+    "hello": "echo hello world",
+    "start": "node index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
