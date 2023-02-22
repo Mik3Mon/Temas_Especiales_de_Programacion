@@ -1,11 +1,12 @@
-class Math {
+class Math  {
+
     /**
     * add
     * @param {number} a the first number to add
     * @param {number} b the second number to add 
     * @returns {number} the sum of a and b
     */
-    add (a, b) {
+    add(a, b)   {
         if (typeof a !== 'number' || typeof b !== 'number') {
             throw new Error('both numbers must be type number')
         }
@@ -16,7 +17,24 @@ class Math {
     * sumArr
     * @param {Array<number>} arr the array of numbers to add
     */
-    sumArr (arr) {
+    sumArr(arr) {
+        
+    }
+
+    /**
+    * avg
+    * @param {Array<number>} arr the array of numbers to avg
+    */
+    avg(arr)    {
+
+
+    }
+
+    /**
+    * avg
+    * @param {Array<number>} arr the array of numbers to avg
+    */
+    uniques(arr)   {
         
     }
 }
