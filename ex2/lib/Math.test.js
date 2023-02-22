@@ -19,7 +19,7 @@ describe('Math class', () => {
         const math = new Math();
         const arr = [4, 5, 2, 8, 11, 9];
 
-        const sum = math.sumArr(arr)
+        const sum = math.sumArr(arr);
 
         expect(math.sumArr).toBeDefined();
         expect(sum).toBe(39);
@@ -42,6 +42,6 @@ describe('Math class', () => {
         const uniques = math.uniques(arr)
 
         expect(math.uniques).toBeDefined();
-        expect(uniques).toBe([1, 3, 2, 6, 5, 4]);
+        expect(uniques).toStrictEqual([1, 3, 2, 6, 5, 4]);
     });
 });
