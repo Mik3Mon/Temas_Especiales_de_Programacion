@@ -41,20 +41,39 @@ class Math  {
         return prom;
     }
 
-    /**
-    * uniques
+    // /**
+    // * uniques
+    // * @param {Array<number>} arr the array of numbers to filter
+    // * @param {Array<number>} arr the array of control
+    // */
+    // uniques(arr)   {
+    //     let arr2 = [];
+    //     for(let i = 0; i < arr.length; i++) {
+    //         if(!arr2.includes(arr[i])){
+    //             arr2.push(arr[i]);
+    //         }
+    //     }
+    //     return arr2;
+    // }
+
+     /**
+    * uniques2
     * @param {Array<number>} arr the array of numbers to filter
-    * @param {Array<number>} arr the array of control
+    * @param {Array<number>} arr2 the array of control
     */
     uniques(arr)   {
-        let arr2 = [];
-        for(let i = 0; i < arr.length; i++) {
-            if(!arr2.includes(arr[i])){
-                arr2.push(arr[i]);
+        const arr2 = [];
+        const dict = {};
+        for (let i = 0; i < arr.length; i++) {
+            const inx = arr[i];
+            if(!dict[inx]){
+                dict[inx] = true;
+                arr2.push(inx);
             }
         }
         return arr2;
     }
+    
 }
 
 module.exports = Math;

@@ -15,7 +15,7 @@ describe('Math class', () => {
         expect(math.add(-1, -1)).toBe(-2);
     });
 
-    it('should add the element of an array of numbers', () => {
+    it('should the sum of the elements of an array of numbers', () => {
         const math = new Math();
         const arr = [4, 5, 2, 8, 11, 9];
 
