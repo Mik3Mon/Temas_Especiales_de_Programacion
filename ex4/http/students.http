@@ -1,14 +1,29 @@
-GET http://localhost:3000/students/01 HTTP/1.1
-
-###
-
-GET http://localhost:3000/teachers/ HTTP/1.1
-
-###
-
 POST  http://localhost:3000/students/account
 
 ###
 
 POST  http://localhost:3000/teachers/account
+
+###
+//Todos los alumnos que son becados
+GET http://localhost:3000/students/ HTTP/1.1
+
+###
+//Todos los alumnos mayores de 21 años
+
+
+###
+//Todos los alumnos y maestros entre los 26 y 28 años
+
+
+###
+//X numero de profesores
+
+
+###
+//Profesor por id
+GET http://localhost:3000/teachers/010 HTTP/1.1
+
+###
+//Profesores cuyo apellido empiece con una letra en especifico
 
