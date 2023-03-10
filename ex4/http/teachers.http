@@ -1,0 +1,17 @@
+POST  http://localhost:3000/teachers/account
+
+###
+//X numero de profesores
+GET http://localhost:3000/teachers/teacher/xTeachers/25?limit=100 HTTP/1.1
+
+###
+//Profesor por id
+GET http://localhost:3000/teachers/teacher/025?limit=50 HTTP/1.1
+
+###
+//Profesores cuyo apellido empiece con una letra en especifico
+GET http://localhost:3000/teachers/teacher/firstLetterLastName/M?limit=50 HTTP/1.1
+
+###
+//Todos los profesores entre los 26 y 28 años
+GET http://localhost:3000/teachers/rangeAge?limit=50 HTTP/1.1
