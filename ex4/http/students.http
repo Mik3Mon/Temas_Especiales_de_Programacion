@@ -1,1 +1,14 @@
-GET http://localhost:3000/students?limit=5 HTTP/1.1
+GET http://localhost:3000/students/01 HTTP/1.1
+
+###
+
+GET http://localhost:3000/teachers/ HTTP/1.1
+
+###
+
+POST  http://localhost:3000/students/account
+
+###
+
+POST  http://localhost:3000/teachers/account
+
