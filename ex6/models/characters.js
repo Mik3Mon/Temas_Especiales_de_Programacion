@@ -8,14 +8,8 @@ const CharactersSchema = new Schema({
     species: String,
     type: String,
     gender: String,
-    origin: {
-        name: String,
-        url: String
-    },
-    location: {
-        name: String,
-        url: String
-    },
+    origin: Object,
+    location: Object,
     image: String,
     episode: [String],
     url: String,
