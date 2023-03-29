@@ -5,7 +5,7 @@ const routes = require('./api');
 
 app.use(routes);
 
-app.get('/episodes', (_, res) => {
+app.get('/', (_, res) => {
     res.send({
         messsage: 'Hello World'
     });
