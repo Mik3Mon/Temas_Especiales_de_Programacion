@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 
 const sequelize = require('../db/postgres');
 
-const Editorials = sequelize.define('editorials', {
+const editorials = sequelize.define('editorials', {
   name: {
     type: DataTypes.STRING,
       allowNull: false
@@ -13,4 +13,4 @@ const Editorials = sequelize.define('editorials', {
 
 
 
-module.exports = Editorials;
+module.exports = editorials;
